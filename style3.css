@@ -20,7 +20,13 @@ header{
     flex-direction: column;
     justify-content: space-between;
     padding: 10px;
-}  
+} 
+
+@media (max-width: 576px) {
+   header{
+      background-color: rgb(104, 33, 83) ;
+   }
+}
 
 header img{
    width: 80px;
@@ -36,12 +42,38 @@ header nav a{
   text-transform: uppercase;
 }
 
+@media (max-width: 576px) {
+   header nav a{
+      font-family:Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 10px;
+      color:rgb(199, 144, 181);
+      text-transform: uppercase;  
+   }
+   
+}
+   
 nav a:hover{
     color: #f588ff;
+    font-size: 14px;
 }
 
+@media (max-width: 576px){
+   nav a:hover{
+      color: #ce53a9;
+      font-size: 14px; 
+   }
+
+}
 body{
   background-color: rgb(87, 61, 90);
+}
+
+@media (max-width: 576px){
+   body{
+      background-color: rgb(134, 81, 117) ;
+   }
 }
 
 section{
@@ -50,6 +82,13 @@ section{
    padding: 30px 10px 30px 10px;
    border-radius: 10px;
    text-align: left;
+   font-size: 20px;
+}
+
+@media (max-width: 576px) {
+  section{
+   font-size: 15px;
+  } 
 }
 
 section form{
@@ -72,10 +111,10 @@ main {
    display: flex;
    justify-content: space-around;
    flex-wrap: wrap;
-   width: 80%;
+   width: 100%;
    border-radius: 30px;
    margin: 0 auto;
-   padding: 100px;
+   padding: 0px 250px 0px 20px;
 }
 
 footer{
@@ -85,6 +124,15 @@ footer{
   background-color:  rgb(112, 79, 116);
   padding: 10px 10px 10px 10px;
 }
+
+@media (max-width: 576px) {
+   footer{
+      background-color: rgb(141, 95, 126) 
+      
+   }
+   
+}
+
 
 
 
